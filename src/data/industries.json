@@ -1,0 +1,540 @@
+{
+    "categories": [
+        {
+            "id": "food-service",
+            "name": "餐飲服務業",
+            "industries": [
+                1,
+                4,
+                21
+            ]
+        },
+        {
+            "id": "retail",
+            "name": "零售與電商",
+            "industries": [
+                2,
+                3,
+                13
+            ]
+        },
+        {
+            "id": "beauty-health",
+            "name": "美容健康",
+            "industries": [
+                5
+            ]
+        },
+        {
+            "id": "education",
+            "name": "教育培訓",
+            "industries": [
+                6
+            ]
+        },
+        {
+            "id": "real-estate",
+            "name": "房地產相關",
+            "industries": [
+                7
+            ]
+        },
+        {
+            "id": "automotive",
+            "name": "汽車相關",
+            "industries": [
+                8,
+                20
+            ]
+        },
+        {
+            "id": "engineering",
+            "name": "工程與裝修",
+            "industries": [
+                9,
+                10,
+                11,
+                22,
+                28
+            ]
+        },
+        {
+            "id": "design-marketing",
+            "name": "設計與行銷",
+            "industries": [
+                12
+            ]
+        },
+        {
+            "id": "technology",
+            "name": "科技與軟體",
+            "industries": [
+                14
+            ]
+        },
+        {
+            "id": "manufacturing",
+            "name": "製造業",
+            "industries": [
+                15,
+                16,
+                29,
+                30
+            ]
+        },
+        {
+            "id": "service-outsourcing",
+            "name": "服務外包",
+            "industries": [
+                17,
+                18
+            ]
+        },
+        {
+            "id": "trade-supply",
+            "name": "貿易與供應鏈",
+            "industries": [
+                19,
+                23,
+                24
+            ]
+        },
+        {
+            "id": "gifts",
+            "name": "禮贈品",
+            "industries": [
+                27
+            ]
+        },
+        {
+            "id": "tourism",
+            "name": "旅遊觀光",
+            "industries": [
+                25,
+                26
+            ]
+        }
+    ],
+    "industries": [
+        {
+            "id": 1,
+            "name": "小吃／便當／熱炒／火鍋／燒肉等堂食餐廳",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Media-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 20,
+                "產品技術": 35,
+                "品牌行銷": 25,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 2,
+            "name": "服飾／鞋包／飾品買手型公司（電商＋直播）",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 20,
+                "產品技術": 25,
+                "品牌行銷": 40,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 3,
+            "name": "實體零售門市小連鎖（3C配件店、手機維修店等）",
+            "primary_growth_engine": "Channel-led/Network-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 25,
+                "品牌行銷": 20,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 4,
+            "name": "手搖飲／咖啡／甜點／早午餐品牌（2～5 門市型）",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Channel-led / Network-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 20,
+                "產品技術": 30,
+                "品牌行銷": 35,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 5,
+            "name": "美容美體／醫美門診／健身教室／運動教練工作室",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 25,
+                "品牌行銷": 35,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 6,
+            "name": "企業內訓／補教／才藝教室／技職訓練中心",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 30,
+                "品牌行銷": 30,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 7,
+            "name": "仲介／代管（不動產仲介店頭／包租代管／社宅代管）",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 45,
+            "hr_cost_ratio_max": 50,
+            "department_allocation": {
+                "客戶經營": 40,
+                "產品技術": 25,
+                "品牌行銷": 20,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 8,
+            "name": "汽機車保修與鈑噴／定檢保養",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 9,
+            "name": "水電工程行／弱電監控佈線團隊",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 30,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 10,
+            "name": "室內裝修／系統櫥櫃／木作／設計統包公司",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Product-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 35,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 11,
+            "name": "小型營造／土木包商",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 35,
+                "品牌行銷": 10,
+                "行政支援": 25
+            }
+        },
+        {
+            "id": 12,
+            "name": "平面設計／品牌設計／行銷代營運公司",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 45,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 30,
+                "品牌行銷": 30,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 13,
+            "name": "自有品牌電商品牌（蝦皮、MOMO、官網 DTC）",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Product-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 20,
+                "產品技術": 30,
+                "品牌行銷": 35,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 14,
+            "name": "網站／系統整合／軟體客製／AI顧問小型公司",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Product-led",
+            "hr_cost_ratio_min": 45,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 15,
+            "name": "金屬加工、機械零配件工廠",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Product-led",
+            "hr_cost_ratio_min": 35,
+            "hr_cost_ratio_max": 40,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 35,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 16,
+            "name": "塑膠射出、包裝、印刷加工廠",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Product-led",
+            "hr_cost_ratio_min": 35,
+            "hr_cost_ratio_max": 40,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 17,
+            "name": "清潔外包／派遣／安管（保全、清潔、臨時工派遣）",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 48,
+            "hr_cost_ratio_max": 52,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 30,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 18,
+            "name": "物流／快遞／倉儲代管／外送車隊",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Sales-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 19,
+            "name": "原物料／零組件供應商（B2B供應）",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 40,
+                "產品技術": 25,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 20,
+            "name": "汽機車零件批發、維修體系零件供應商",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 30,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 21,
+            "name": "外燴／餐盒／中央廚房型小團隊",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 35,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 22,
+            "name": "廠房機電維護團隊（長約維修保養）",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 23,
+            "name": "進出口貿易公司（代理國外品牌）",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Channel-led / Network-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 25,
+                "品牌行銷": 20,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 24,
+            "name": "食品／保健品／化妝品代理商",
+            "primary_growth_engine": "Channel-led/Network-led",
+            "secondary_growth_engine": "Media-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 20,
+                "品牌行銷": 30,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 25,
+            "name": "民宿／旅宿／包棟／露營園區經營團隊",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 20,
+                "產品技術": 35,
+                "品牌行銷": 30,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 26,
+            "name": "在地觀光體驗／旅遊小包團公司",
+            "primary_growth_engine": "Media-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 45,
+            "hr_cost_ratio_max": 50,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 25,
+                "品牌行銷": 35,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 27,
+            "name": "客製化禮贈品／廣告贈品工廠",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 32,
+            "hr_cost_ratio_max": 38,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 30,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 28,
+            "name": "太陽能／節能設備／淨零相關施工小團隊",
+            "primary_growth_engine": "Sales-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 35,
+            "hr_cost_ratio_max": 40,
+            "department_allocation": {
+                "客戶經營": 35,
+                "產品技術": 30,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 29,
+            "name": "食品代工／醬料代工／烘焙代工工作室",
+            "primary_growth_engine": "Product-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 35,
+            "hr_cost_ratio_max": 40,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 30,
+            "name": "美妝／清潔用品 OEM/ODM 小工廠",
+            "primary_growth_engine": "Product-led",
+            "secondary_growth_engine": "Sales-led",
+            "hr_cost_ratio_min": 35,
+            "hr_cost_ratio_max": 40,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 15
+            }
+        }
+    ]
+}
