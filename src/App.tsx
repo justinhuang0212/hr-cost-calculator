@@ -43,7 +43,7 @@ function App() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">人事成本計算器</h1>
-          <p className="text-gray-600">專為 50 人以下中小企業設計的人事成本評估工具</p>
+          <p className="text-gray-600">專為中小企業設計的人事成本評估工具</p>
         </div>
 
         {/* Main Content */}
