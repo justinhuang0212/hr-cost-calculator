@@ -131,6 +131,13 @@ export default function CalculationResult({ result }: CalculationResultProps) {
                         ))}
                     </div>
                 </div>
+                
+                {/* 說明文字 */}
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                    <p className="text-xs text-gray-500">
+                        * 人事成本包含薪資、勞健保、退休金提撥、年終獎金等所有人力相關支出
+                    </p>
+                </div>
             </div>
 
         </div>
