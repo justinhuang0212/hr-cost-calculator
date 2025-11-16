@@ -184,16 +184,20 @@ export default function FinancialInput({ onSubmit, disabled }: FinancialInputPro
                         </label>
                         <div className="relative">
                             <input
-                                type="number"
+                                type="text"
+                                inputMode="decimal"
                                 id="margin"
                                 disabled={disabled}
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100"
+                                className="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100"
                                 placeholder="70"
-                                min="0"
-                                max="100"
-                                step="0.1"
                                 value={grossProfitMargin}
-                                onChange={(e) => setGrossProfitMargin(e.target.value)}
+                                onChange={(e) => {
+                                    const value = e.target.value;
+                                    // 只允許數字和小數點
+                                    if (value === '' || /^\d*\.?\d*$/.test(value)) {
+                                        setGrossProfitMargin(value);
+                                    }
+                                }}
                             />
                             <span className="absolute right-3 top-3 text-gray-500">%</span>
                         </div>

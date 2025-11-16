@@ -71,16 +71,16 @@ export default function CalculationResult({ result }: CalculationResultProps) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* 圓餅圖 */}
-                    <div className="flex items-center justify-center">
-                        <ResponsiveContainer width="100%" height={300}>
+                    <div className="flex items-center justify-center py-8">
+                        <ResponsiveContainer width="100%" height={350}>
                             <PieChart>
                                 <Pie
                                     data={chartData}
                                     cx="50%"
                                     cy="50%"
-                                    labelLine={false}
+                                    labelLine={true}
                                     label={({ name, value }) => `${name} ${value.toFixed(0)}%`}
-                                    outerRadius={100}
+                                    outerRadius={90}
                                     fill="#8884d8"
                                     dataKey="value"
                                 >
@@ -133,44 +133,6 @@ export default function CalculationResult({ result }: CalculationResultProps) {
                 </div>
             </div>
 
-            {/* 產業資訊和說明 */}
-            <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-lg p-6 border border-gray-200">
-                <div className="flex items-start">
-                    <svg
-                        className="w-6 h-6 text-blue-600 mt-0.5 mr-3 flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                    </svg>
-                    <div className="flex-1">
-                        <p className="text-sm text-gray-700 mb-2">
-                            <span className="font-semibold">產業：</span>
-                            {result.industry.name}
-                        </p>
-                        <p className="text-sm text-gray-700 mb-2">
-                            <span className="font-semibold">增長引擎：</span>
-                            {result.industry.primary_growth_engine}
-                            {result.industry.secondary_growth_engine &&
-                                ` / ${result.industry.secondary_growth_engine}`}
-                        </p>
-                        <p className="text-sm text-gray-700 mb-2">
-                            <span className="font-semibold">建議：</span>
-                            您的產業是「{result.industry.primary_growth_engine}」，建議優先投資
-                            {priorityDept.department}部門（{formatPercent(priorityDept.percentage)}）
-                        </p>
-                        <p className="text-xs text-gray-500 mt-3">
-                            * 人事成本包含薪資、勞健保、退休金提撥、年終獎金等所有人力相關支出
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }

@@ -2,7 +2,7 @@
     "categories": [
         {
             "id": "food-service",
-            "name": "餐飲服務業",
+            "name": "餐飲",
             "industries": [
                 1,
                 4,
@@ -23,6 +23,15 @@
             "name": "美容健康",
             "industries": [
                 5
+            ]
+        },
+        {
+            "id": "medical",
+            "name": "醫療",
+            "industries": [
+                31,
+                32,
+                33
             ]
         },
         {
@@ -74,7 +83,7 @@
         },
         {
             "id": "manufacturing",
-            "name": "製造業",
+            "name": "製造",
             "industries": [
                 15,
                 16,
@@ -118,7 +127,7 @@
     "industries": [
         {
             "id": 1,
-            "name": "小吃／便當／熱炒／火鍋／燒肉等堂食餐廳",
+            "name": "小吃／便當／熱炒／火鍋／燒肉等內用餐廳",
             "primary_growth_engine": "Ops-led",
             "secondary_growth_engine": "Media-led",
             "hr_cost_ratio_min": 50,
@@ -534,6 +543,48 @@
                 "產品技術": 40,
                 "品牌行銷": 15,
                 "行政支援": 15
+            }
+        },
+        {
+            "id": 31,
+            "name": "診所／牙醫診所／中醫診所",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Media-led",
+            "hr_cost_ratio_min": 45,
+            "hr_cost_ratio_max": 50,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 35,
+                "品牌行銷": 25,
+                "行政支援": 15
+            }
+        },
+        {
+            "id": 32,
+            "name": "居家照護／長照機構／日照中心",
+            "primary_growth_engine": "Ops-led",
+            "secondary_growth_engine": "Founder-led / Relationship-led",
+            "hr_cost_ratio_min": 50,
+            "hr_cost_ratio_max": 55,
+            "department_allocation": {
+                "客戶經營": 25,
+                "產品技術": 40,
+                "品牌行銷": 15,
+                "行政支援": 20
+            }
+        },
+        {
+            "id": 33,
+            "name": "藥局／醫療器材行／復健輔具店",
+            "primary_growth_engine": "Founder-led / Relationship-led",
+            "secondary_growth_engine": "Ops-led",
+            "hr_cost_ratio_min": 40,
+            "hr_cost_ratio_max": 45,
+            "department_allocation": {
+                "客戶經營": 30,
+                "產品技術": 30,
+                "品牌行銷": 20,
+                "行政支援": 20
             }
         }
     ]

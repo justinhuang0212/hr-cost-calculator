@@ -51,7 +51,7 @@ export default function Recommendations({ result, onAdvancedAnalysis }: Recommen
                         />
                     </svg>
                     <div className="flex-1">
-                        <h3 className="text-xl font-bold mb-2">💡 核心建議</h3>
+                        <h3 className="text-xl font-bold mb-2">核心建議</h3>
                         <p className="text-blue-100 mb-4">
                             您的產業是「{result.industry.primary_growth_engine}」，{getGrowthEngineAdvice()}
                         </p>
@@ -143,7 +143,7 @@ export default function Recommendations({ result, onAdvancedAnalysis }: Recommen
                                 </li>
                             </ul>
                             <p className="text-xs text-gray-500 mt-3 italic">
-                                💡 行政、行銷等支援部門：基礎薪資 50% + 季獎金 30% = 80%，其餘 20% 可作為調薪空間
+                                行政、行銷等支援部門：基礎薪資 50% + 季獎金 30% = 80%，其餘 20% 可作為調薪空間
                             </p>
                         </div>
                     </div>
