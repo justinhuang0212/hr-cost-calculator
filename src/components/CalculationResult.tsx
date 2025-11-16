@@ -71,8 +71,8 @@ export default function CalculationResult({ result }: CalculationResultProps) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* 圓餅圖 */}
-                    <div className="flex items-center justify-center py-8">
-                        <ResponsiveContainer width="100%" height={350}>
+                    <div className="flex items-center justify-center px-4 py-12">
+                        <ResponsiveContainer width="100%" height={400}>
                             <PieChart>
                                 <Pie
                                     data={chartData}
@@ -80,7 +80,7 @@ export default function CalculationResult({ result }: CalculationResultProps) {
                                     cy="50%"
                                     labelLine={true}
                                     label={({ name, value }) => `${name} ${value.toFixed(0)}%`}
-                                    outerRadius={90}
+                                    outerRadius={80}
                                     fill="#8884d8"
                                     dataKey="value"
                                 >
